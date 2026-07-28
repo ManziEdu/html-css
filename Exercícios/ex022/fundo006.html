@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
+           /* Ao invés de fazer isso tudo:
             background-color: #7486ae;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* Usa-se essa Shorthand para Background:
+            color > image > position > repeat > [size] > attachment
+
+            ---> ('background-size' não está funcionando dentro dessa Shorthand. Tem que colocar ele a parte) - (28/07/26)
+
+            Que fica assim:
+            */
+
+            background: #7486ae url(imagens/wallpaper002.jpg) center center no-repeat fixed;
             background-size: cover;
         }
         main {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
         }
+        main h1#serif {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <main>
-    <h1>Teste de Imagem de Fundo</h1>
+    <h1 id="serif">Teste de Imagem de Fundo</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugit quibusdam quo ut nam. Nulla accusantium fugiat quia dolor quos nemo, similique excepturi, impedit nostrum minima debitis repellendus laudantium officiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nobis facere animi et neque sint sunt, aut, reprehenderit maxime quibusdam doloremque obcaecati labore vero laudantium deserunt velit! Mollitia, sapiente corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugit porro dolorum suscipit praesentium voluptas unde ratione similique dignissimos. Id doloribus vitae nihil, inventore velit totam reprehenderit molestiae suscipit dolores.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugit quibusdam quo ut nam. Nulla accusantium fugiat quia dolor quos nemo, similique excepturi, impedit nostrum minima debitis repellendus laudantium officiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nobis facere animi et neque sint sunt, aut, reprehenderit maxime quibusdam doloremque obcaecati labore vero laudantium deserunt velit! Mollitia, sapiente corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugit porro dolorum suscipit praesentium voluptas unde ratione similique dignissimos. Id doloribus vitae nihil, inventore velit totam reprehenderit molestiae suscipit dolores.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fugit quibusdam quo ut nam. Nulla accusantium fugiat quia dolor quos nemo, similique excepturi, impedit nostrum minima debitis repellendus laudantium officiis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas nobis facere animi et neque sint sunt, aut, reprehenderit maxime quibusdam doloremque obcaecati labore vero laudantium deserunt velit! Mollitia, sapiente corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugit porro dolorum suscipit praesentium voluptas unde ratione similique dignissimos. Id doloribus vitae nihil, inventore velit totam reprehenderit molestiae suscipit dolores.</p>
