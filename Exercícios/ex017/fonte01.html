@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in(polegada), px, pt, pc
+            16px geralmente = 1em
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size: 1em;
+        }
+        h1 {
+            /* Shorthand Font ('mãozinha/bizu')
+            Faça isso (exatemente nessa sequência):
+            font-style --> font-weight --> font-size --> font-family
+            
+            Ao invés disso:
+            font-family: Arial, sans-serif;
+            font-wigth: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+            Que fica assim:
+            */
+            font: italic bolder 3em arial, sans-serif;
+            }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt error saepe sint accusantium eius nisi, quas ad libero aperiam voluptates possimus facere distinctio ullam quasi enim mollitia quisquam voluptate maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet veniam, quae asperiores iure distinctio autem hic, deleniti aliquam tempore quisquam inventore, atque assumenda animi vel nihil eaque nesciunt minus aspernatur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga vero dolorem perspiciatis perferendis quas at tenetur voluptate sapiente? Amet minus autem aliquam molestiae illo quidem a atque obcaecati quas eaque.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptatem assumenda fuga qui id deleniti harum laboriosam, consequatur ratione non aspernatur! Fugit doloribus, maiores velit autem reiciendis suscipit ad iure. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur numquam voluptas maxime quam rerum impedit dignissimos cumque, magni odio! Fugiat magnam enim dolores culpa optio minus veritatis cum officia ea.</p>
+</body>
+</html>
