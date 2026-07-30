@@ -4,8 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+        thead, tfoot {
+            background-color: rgb(201, 214, 248);
+            color: white;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgrey;
+        }
+        abbr {
+            text-decoration: none;
+        }
+        table {
+             width: 500px;
+             border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            color: black
+        }
+        
+        td#red {
+            color: red;
+            background-color: rgb(201, 214, 248);
+        }
+        a {
+        text-decoration: underline;
+       }
+        .numero {
+            text-align: right;
+        }
+        .azul {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
+    <!--
+            ANATOMIA PARA TABELS GRANDES
+            TABLE
+                CAPTION 
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+    -->
     <h1>Uso de tabelas grandes</h1>
+        <table>
+            <caption><abbr title="Esta é uma lista da população das unidades federativas do Brasil, segundo dados divulgados pelo Instituto Brasileiro de Geografia e Estatística IBGE.
+    Em 1º de agosto de 2022, data de referência do censo brasileiro de 2022, os cinco   estados mais populosos do Brasil contiveram um pouco mais da metade da população  nacional. As dez unidades federativas menos populosas contiveram menos de um décimo da  população total. São Paulo, o estado mais populoso, teve mais habitantes do que as 15 unidades federativas menos populosas juntas, e Roraima, o estado menos populoso, teve uma população menor do que qualquer um dos 27 municípios mais populosos do Brasil.">População das unidades federativas</abbr></caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado/Unidade Federativa</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td class="azul">São Paulo</td>
+                        <td class="numero">46.081.801</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Minas Gerais</td>
+                        <td class="numero">21.393.441</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Rio de Janeiro</td>
+                        <td class="numero">17.223.547</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Bahia</td>
+                        <td class="numero">14.870.907</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Paraná</td>
+                        <td class="numero">11.890.517</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Rio Grande do Sul</td>
+                        <td class="numero">11.233.263</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Pernambuco</td>
+                        <td class="numero">9.562.007</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Ceará</td>
+                        <td class="numero">9.268.836</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Pará</td>
+                        <td class="numero">8.711.196</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Santa Catarina</td>
+                        <td class="numero">8.187.029</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Goiás</td>
+                        <td class="numero">7.423.629</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Maranhão</td>
+                        <td class="numero">7.018.211</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Amazonas</td>
+                        <td class="numero">4.321.616</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Paraíba</td>
+                        <td class="numero">4.164.468</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Espírito Santo</td>
+                        <td class="numero">4.126.854</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Mato Grosso</td>
+                        <td class="numero">3.893.659</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Rio Grande do Sul</td>
+                        <td class="numero">3.455.236</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Piauí</td>
+                        <td class="numero">3.384.547</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Alagoas</td>
+                        <td class="numero">3.220.848</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Distrito Federal</td>
+                        <td class="numero">2.996.899</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Mato Grosso do Sul</td>
+                        <td class="numero">2.924.631</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Sergipe</td>
+                        <td class="numero">2.229.425</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Rondônia</td>
+                        <td class="numero">1.751.950</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Tocantins</td>
+                        <td class="numero">1.586.859</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Acre</td>
+                        <td class="numero">884.372</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Amapá</td>
+                        <td class="numero">806.517</td>
+                    </tr>
+                    <tr>
+                        <td class="azul">Roraima</td>
+                        <td class="numero">738.772</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="numero" id="red">213.421.037</td>
+            </tfoot>
+        </table>
+        <p>Verifique em <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" rel="externo">Wikipedia.org</a></p>
 </body>
 </html>
