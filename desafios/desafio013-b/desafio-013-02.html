@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas/Letras</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table td {
+            border-collapse: collapse;
+            width: 40px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+        td.green {
+            background-color: lightgreen;
+        }
+        td.red {
+            background-color: lightcoral;
+        }
+        td.blue {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="4" class="green">A</td>
+            <td rowspan="4" class="green">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4" class="green">C</td>
+            <td  class="blue">D</td>
+            <td class="blue">E</td>
+            <td  class="blue">F</td>
+        </tr>
+        <tr>
+            <td class="blue">G</td>
+            <td class="red">H</td>
+            <td class="blue">I</td>
+        </tr>
+        <tr>
+            <td class="blue">J</td>
+            <td class="blue">K</td>
+            <td class="blue">L</td>
+        </tr>
+        <tr>
+            <td colspan="4" class="green">M</td>
+        </tr>
+    </table>
+</body>
+</html>
